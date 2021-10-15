@@ -1,0 +1,62 @@
+.wjs_new {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_new .container .row > div h3 {
+  font-size: 26px;
+  border-bottom: 1px solid #ccc;
+  line-height: 50px;
+  position: relative;
+}
+.wjs_new .container .row > div h3::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  right: -2px;
+  bottom: -4px;
+}
+.wjs_new .container .row > div .nav-tabs {
+  border: none;
+}
+.wjs_new .container .row > div .nav-tabs .wjs_icon {
+  font-size: 30px;
+}
+.wjs_new .container .row > div .nav-tabs li {
+  float: left;
+  margin-bottom: 30px;
+}
+.wjs_new .container .row > div .nav-tabs li a {
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+}
+.wjs_new .container .row > div .nav-tabs li.active a,
+.wjs_new .container .row > div .nav-tabs li.active a:hover,
+.wjs_new .container .row > div .nav-tabs li.active a:focus {
+  background-color: red;
+  color: white;
+  cursor: default;
+  border: none;
+  border-bottom-color: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wjs_new .container .row > div .nav-tabs > li {
+    margin: 20px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wjs_new .container .row > div .nav-tabs > li {
+    width: 25%;
+    margin-top: 20px;
+  }
+  .wjs_new .container .row > div .nav-tabs > li > a {
+    width: 60px;
+    height: 62px;
+  }
+}
+.wjs_new .container .row > div .tab-content ul li {
+  line-height: 40px;
+}

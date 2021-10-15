@@ -1,0 +1,230 @@
+.wjs_product {
+    background-color: #eee;
+
+    .container {
+
+        .navp {
+            overflow: hidden;
+
+            .nav-tabs {
+                height     : 60px;
+                line-height: 60px;
+
+                border: none;
+
+                li {
+                    height: 100%;
+                    float : left;
+
+                    margin-bottom: -1px;
+                    border-bottom: 1px solid #ddd;
+
+                    a {
+                        height          : 100%;
+                        line-height     : 40px;
+                        margin-right    : 2px;
+                        border-color    : transparent;
+                        // border-bottom: 1px solid transparent;
+                        border-radius   : 4px 4px 0 0;
+                    }
+
+                    &.active {
+
+                        a,
+                        a:hover,
+                        a:focus {
+                            color              : #555555;
+                            cursor             : default;
+                            background-color   : transparent;
+                            border-bottom-color: transparent;
+                            border-bottom      : 2px solid red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-tabs.nav-justified {
+            width        : 100%;
+            border-bottom: 0;
+        }
+
+        .nav-tabs.nav-justified>li {
+            float: none;
+        }
+
+        .nav-tabs.nav-justified>li>a {
+            margin-bottom: 5px;
+            text-align   : center;
+        }
+
+        .nav-tabs.nav-justified>.dropdown .dropdown-menu {
+            top : auto;
+            left: auto;
+        }
+
+        @media (min-width: 768px) {
+            .nav-tabs.nav-justified>li {
+                display: table-cell;
+                width  : 1%;
+            }
+
+            .nav-tabs.nav-justified>li>a {
+                margin-bottom: 0;
+            }
+        }
+
+        .nav-tabs.nav-justified>li>a {
+            margin-right : 0;
+            border-radius: 4px;
+        }
+
+        .nav-tabs.nav-justified>.active>a,
+        .nav-tabs.nav-justified>.active>a:hover,
+        .nav-tabs.nav-justified>.active>a:focus {
+            border: 1px solid #dddddd;
+        }
+
+        @media (min-width: 768px) {
+            .nav-tabs.nav-justified>li>a {
+                border-bottom: 1px solid #dddddd;
+                border-radius: 4px 4px 0 0;
+            }
+
+            .nav-tabs.nav-justified>.active>a,
+            .nav-tabs.nav-justified>.active>a:hover,
+            .nav-tabs.nav-justified>.active>a:focus {
+                border-bottom-color: #ffffff;
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                .row {
+                    >div {
+                        a {
+                            display   : block;
+                            width     : 100%;
+                            height    : 150px;
+                            background: #fff;
+                            box-shadow: 3px 3px 5px #d8d8d8;
+                            color     : #666;
+                            margin-top: 30px;
+
+                            &.active {
+                                background: #e92322;
+                                color     : #fff;
+                                position  : relative;
+
+                                .pro_right p:first-of-type {
+                                    color: #fff;
+                                }
+                            }
+
+                            &.active::before {
+                                content    : "\e915";
+                                position   : absolute;                    
+                                font-family: wjs;
+                                font-size  : 33px;
+                            }
+
+                            .pro_right {
+                                float   : right;
+                                width   : 80px;
+                                position: relative;
+                                height  : 100%;
+                                .tips{
+                                    position: absolute;
+                                    left: 0;
+                                    top: 10px;
+                                    width: 100%;
+                                    span{
+                                        width: 16px;
+                                        height: 16px;
+                                        text-align: center;
+                                        line-height: 16px;
+                                        border-width: 1px;
+                                        border-style: solid;
+                                        display: inline-block;
+            
+                                        
+                                    }
+                                    .red{
+                                        color: red;
+                                        border-color: red;
+                                    }
+                                    .green{
+                                        color: green;
+                                        border-color: green;
+                                    }
+                                }
+
+                                p {
+                                    &:first-of-type {
+                                        margin-top: 25px;
+                                        color     : #e92322;
+                                    }
+
+                                    b {
+                                        font-size: 48px;
+                                    }
+
+                                    sub {
+                                        bottom   : 0;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                &::before {
+                                    content      : "";
+                                    position     : absolute;
+                                    width        : 12px;
+                                    height       : 12px;
+                                    border-radius: 6px;
+                                    background   : #f5f5f5;
+                                    left         : -6px;
+                                    top          : -5px;
+                                    box-shadow   : 0 -2px 2px #d8d8d8 inset;
+                                }
+
+                                &::after {
+                                    content      : "";
+                                    position     : absolute;
+                                    width        : 12px;
+                                    height       : 12px;
+                                    border-radius: 6px;
+                                    background   : #f5f5f5;
+                                    left         : -6px;
+                                    bottom       : -5px;
+                                    box-shadow   : 0 -2px 2px #d8d8d8 inset;
+                                }
+                            }
+
+                            .pro_left {
+                                overflow: hidden;
+                                height  : 100%;
+
+                                h3 {
+                                    font-size : 16px;
+                                    margin-top: 10px;
+                                }
+
+                                >div {
+                                    font-size : 12px;
+                                    margin-top: 10px;
+
+                                    p {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+
+                                border-right: 1px dashed #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

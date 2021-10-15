@@ -1,0 +1,38 @@
+.wjs_topBar {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_topBar .container .row {
+  line-height: 40px;
+}
+.wjs_topBar .container .row .wjs_app {
+  position: relative;
+}
+.wjs_topBar .container .row .wjs_app img {
+  display: none;
+  position: absolute;
+  left: -2px;
+}
+.wjs_topBar .container .row .wjs_app:hover img {
+  display: block;
+  z-index: 100;
+}
+.wjs_topBar .container .row > div {
+  border-right: 1px solid #ccc;
+}
+.wjs_topBar .container .row > div:last-child {
+  border: none;
+  border-right: none;
+}
+.wjs_topBar .container .row > div .btn-register {
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 10px;
+  padding: 2px 8px;
+}
+.wjs_topBar .container .row > div .btn-login {
+  color: #333;
+  border: none;
+  font-size: 10px;
+}

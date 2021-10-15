@@ -1,0 +1,35 @@
+.wjs_book {
+    border-bottom: 1px solid #ccc;
+
+    .container {
+        line-height: 50px;
+
+        .pull-left {
+            .wjs_icon_clock {
+                font-size: 18px;
+            }
+            span {
+                &:last-child {
+                    color        : red;
+                    border-bottom: 1px dashed red;
+                }
+            }
+        }
+
+        .pull-right {
+            .wjs_icon_video {
+                font-size: 18px;
+            }
+        }
+    }
+    @media screen and(min-width:768px)and(max-width:992px) {
+        .container{
+            width: 750px !important;
+        }
+    }
+    @media screen and(max-width:768px) {
+        .container{
+            width:100%;
+        }
+    }
+}

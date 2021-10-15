@@ -1,0 +1,44 @@
+.wjs_topBar{
+    width: 100%;
+     border-bottom: 1px solid #ccc;
+    .container{ 
+        .row{ 
+            line-height: 40px;
+            .wjs_app{
+               
+                position: relative;
+                img{
+                    display: none;
+                    position: absolute;
+                    left:-2px;
+                }
+                &:hover{
+                    img{
+                        display: block;
+                        z-index:100;
+                    }
+                }
+            }
+            >div{
+                border-right: 1px solid #ccc;
+                 &:last-child{
+                border:none;
+                border-right: none;
+            }
+            .btn-register{
+                background-color: red;
+                color:white;
+                border:none;
+                font-size: 10px;
+                padding: 2px 8px;
+            }
+            .btn-login{
+                color:#333;
+                border:none;
+                font-size: 10px;
+            }
+            }
+           
+        }
+    }
+}

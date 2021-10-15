@@ -1,0 +1,27 @@
+.wjs_info {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+.wjs_info .container {
+  width: 900px;
+}
+.wjs_info .container .row > div {
+  padding: 0 13px 13px 13px;
+  margin-bottom: 10px;
+}
+.wjs_info .container .row .media .wjs_icon_dollar {
+  font-size: 30px;
+}
+.wjs_info .container .row .media .media-body .media-heading {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wjs_info .container {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wjs_info .container {
+    width: 100%;
+  }
+}
