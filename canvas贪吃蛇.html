@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #canvas {
+            background-color: #ff6700;
+            margin-left: 500px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+
+    <script>
+        var canvas = document.getElementById("canvas")
+        var context = canvas.getContext('2d');
+        var snake_body, direction, food_position
+        init_snake()
+
+        function init_snake() {
+            snake_body = [{
+                    x: 20,
+                    y: 20,
+                    color: 'black'
+                }, {
+                    x: 40,
+                    y: 20,
+                    color: 'black'
+                }, {
+                    x: 60,
+                    y: 20,
+                    color: 'white'
+                }]
+                // snake move direction
+            direction = 'right'
+                // food position
+            random_food()
+        }
+        setInterval(function() {
+            context.clearRect(0, 0, 500, 500)
+            init()
+            draw_snake()
+            move_snake()
+        }, 400)
+
+        window.addEventListener('keydown', function(e) {
+            if (e.keyCode == 37) {
+                if (direction != 'right') {
+                    direction = 'left'
+                }
+            } else if (e.keyCode == 39) {
+                if (direction != 'left') {
+                    direction = 'right'
+                }
+            } else if (e.keyCode == 38) {
+                if (direction != 'bottom') {
+                    direction = 'top'
+                }
+            } else if (e.keyCode == 40) {
+                if (direction != 'top') {
+                    direction = 'bottom'
+                }
+            }
+        })
+
+        function init() {
+            context.strokeStyle = 'black'
+            for (var i = 0; i < 500; i += 20) {
+                context.moveTo(i, 0)
+                context.lineTo(i, 500)
+                context.moveTo(0, i)
+                context.lineTo(500, i)
+            }
+            context.stroke()
+            context.fillStyle = 'black'
+            context.fillRect(food_position.x, food_position.y, 20, 20)
+        }
+
+        function draw_snake() {
+            var new_by = []
+            for (var i = 0; i < snake_body.length; i++) {
+                context.fillStyle = snake_body[i].color
+                context.fillRect(snake_body[i].x, snake_body[i].y, 20, 20)
+                new_by.push({
+                    x: snake_body[i].x,
+                    y: snake_body[i].y
+                })
+            }
+            eat_food()
+            dead(new_by)
+
+        }
+
+        function move_snake() {
+            var x = 0,
+                y = 0
+            if (direction == 'right') {
+                x = 20
+            } else if (direction == 'left') {
+                x = -20
+            } else if (direction == 'top') {
+                y = -20
+            } else if (direction == 'bottom') {
+                y = 20
+            }
+            for (var i = 0; i < snake_body.length - 1; i++) {
+                snake_body[i].x = snake_body[i + 1].x
+                snake_body[i].y = snake_body[i + 1].y
+            }
+            snake_body[snake_body.length - 1].x += x
+            snake_body[snake_body.length - 1].y += y
+        }
+
+        function random_food() {
+            food_position = {
+                x: Math.floor(Math.random() * (500 / 20)) * 20,
+                y: Math.floor(Math.random() * (500 / 20)) * 20
+            }
+        }
+
+        function eat_food() {
+            if (snake_body[snake_body.length - 1].x == food_position.x && snake_body[snake_body.length - 1].y == food_position.y) {
+                random_food()
+                add_snake_by()
+            }
+        }
+
+        function add_snake_by() {
+            new_by = {
+                x: snake_body[0].x - 20,
+                y: snake_body[0].y - 20,
+                color: 'black'
+            }
+            snake_body.unshift(new_by)
+        }
+
+        function dead(new_by) {
+            var last_by = snake_body[snake_body.length - 1]
+            if (last_by.x == -20 || last_by.x == 500 || last_by.y == -20 || last_by.y == 500) {
+                alert("重新开始游戏")
+                init_snake()
+            }
+            for (var i = 0; i < new_by.length; i++) {
+                for (var j = i + 1; j < new_by.length; j++) {
+                    if (new_by[i].x == new_by[j].x && new_by[i].y == new_by[j].y) {
+                        alert("重新开始游戏")
+                        init_snake()
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
