@@ -1,0 +1,98 @@
+.sl_nav {
+    background-color: #015CAD;
+
+    .container {
+
+        // width: 100%;
+        .collapse {
+
+            >ul {
+                width: 100%;
+
+                >li {
+                    width: 14%;
+
+                    ul {
+                        display : none;
+                        position: absolute;
+                        width   : 100%;
+
+                        li {
+
+                            a {
+                                display         : block;
+                                height          : 40px;
+                                width           : 100%;
+                                text-decoration : none;
+                                line-height     : 40px;
+                                text-align      : center;
+                                background-color: #fd7e14;
+
+                                &:hover {
+                                    background-color: #015CAD;
+                                }
+                            }
+                        }
+                    }
+
+                    // padding: 0;
+                    a {
+                        font-size       : 14px;
+                        color           : #fff;
+                        background-color: #015CAD;
+                        text-align      : center;
+                        width           : 100%;
+
+                        &:hover {
+                            background-color: #fd7e14;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #fd7e14;
+
+                        ul {
+                            display: block;
+                        }
+                    }
+
+                    position: relative;
+
+                    .active {
+
+                        a,
+                        a:hover,
+                        a:focus {
+                            background-color: #fd7e14;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sl_nav {
+        background-color: transparent;
+
+    }
+
+    .sl_nav .navbar-toggle {
+        width              : 50px;
+        height             : 50px;
+        border-color       : #015CAD;
+        background-color   : #015CAD;
+        position        : fixed;
+        top             : 40px;
+        right           : 16px;
+        z-index            : 1000;
+    }
+
+    .sl_nav .navbar-toggle .icon-bar {
+        background-color: #fff;
+        font-size       : 24px;
+    }
+
+}
