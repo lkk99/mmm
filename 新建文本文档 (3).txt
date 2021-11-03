@@ -1,0 +1,5 @@
+https://m.lrts.me/ajax/getBookDetail?bookId=36816
+音频
+https://m.lrts.me/ajax/getPlayPath?entityId=36816&entityType=3&opType=1&sections=%5B1%5D&type=0
+https://m.lrts.me/ajax/getPlayPath?entityId=36816&entityType=3&opType=1&sections=%5B2%5D&type=0
+https://m.lrts.me/ajax/getPlayPath?entityId=36816&entityType=3&opType=1&sections=%5B3%5D&type=0
