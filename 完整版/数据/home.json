@@ -1,0 +1,325 @@
+[
+	{
+		"hotWord": ["红玫瑰", "百合", "满天星", "康乃馨"],
+		"bannerimg": [
+					"https://upyun.dinghuale.com/uploads/20211202/202112021026598995.jpg",
+					"https://upyun.dinghuale.com/uploads/20210426/202104261423579213.jpg",
+					"http://img.21xianhua.com/upload/2021/09/13/05672a322e6e15414b351d3203d3d311",
+					"https://www.haohua.net/upload/system/2021-02/09/2021d_43cb.jpg"
+				],
+		"girdItem": [
+					{
+						"icon": "https://upyun.dinghuale.com/uploads/images/nav1.png",
+						"title": "知名鲜花电商",
+						"info": "权威认证企业，深受用户喜爱"
+					},
+					{
+						"icon": "https://upyun.dinghuale.com/uploads/images/nav2.png",
+						"title": "品牌保证 口碑真实",
+						"info": "累计好评50w+条"
+					},
+					{
+						"icon": "https://upyun.dinghuale.com/uploads/images/nav3.png",
+						"title": "鲜花实拍秀展示",
+						"info": "敢展示派送前实拍的鲜花网"
+					},
+					{
+						"icon": "https://upyun.dinghuale.com/uploads/images/nav4.png",
+						"title": "快至1小时送达",
+						"info": "保证新鲜 实时制作"
+					},
+					{
+						"icon": "https://upyun.dinghuale.com/uploads/images/nav5.png",
+						"title": "退赔承诺",
+						"info": "值得信赖的售后服务保障"
+					}
+				],
+		"navClass":["鲜花","花束","礼盒","花篮","绿植","周花"],
+		"classType":[
+			{
+				"class":"用途",
+				"cont":["爱情鲜花","生日鲜花","友情鲜花","探病问候","道歉鲜花","问候长辈","感谢老师","哀思鲜花","商务鲜花"]
+			},
+			{
+				"class":"花材",
+				"cont":["玫瑰","百合","康乃馨","向日葵","满天星","郁金香","菊花","其他"]
+			},
+			{
+				"class":"类别",
+				"cont":["花束","礼盒","花篮","绿植","周花","手提花篮","桌花","其他"]
+			}
+		],
+		"homeShow": [
+			{
+				"class": "爱情鲜花",
+				"leftImg": "https://cs.dinghuale.com/uploads/20200624/202006241117412831.jpg",
+                "rightItem":[
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200630/202006301617407670.jpg",
+                        "name":"浪漫满屋",
+                        "price":"￥229",
+                        "sales":17229
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104260950064701.jpg",
+                        "name":"此生不渝",
+                        "price":"￥168",
+                        "sales":16256
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261052034321.jpg",
+                        "name":"粉色公主",
+                        "price":"￥169",
+                        "sales":14875
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20201026/202010260915414084.jpg",
+                        "name":"永恒回忆",
+                        "price":"￥298",
+                        "sales":16022
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210519/202105191204581151.jpg",
+                        "name":"为你心动",
+                        "price":"￥319",
+                        "sales":16877
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261306508528.jpg",
+                        "name":"如约而至",
+                        "price":"￥499",
+                        "sales":15598
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261339329479.jpg",
+                        "name":"你是唯一",
+                        "price":"￥659",
+                        "sales":12821
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200826/202008261128401632.jpg",
+                        "name":"幸福之约",
+                        "price":"￥599",
+                        "sales":13459
+                    }
+                ]
+			},
+			{
+				"class": "友情鲜花",
+				"leftImg": "https://cs.dinghuale.com/uploads/20200624/202006241319037651.jpg",
+                "rightItem":[
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20201208/202012081501255872.jpg",
+                        "name":"温暖阳光",
+                        "price":"￥269",
+                        "sales":12710
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200630/202006301623486849.jpg",
+                        "name":"恋恋情深",
+                        "price":"￥199",
+                        "sales":11522
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200630/202006301514481588.jpg",
+                        "name":"不忘初心",
+                        "price":"￥189",
+                        "sales":10548
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261310519646.jpg",
+                        "name":"满天繁星",
+                        "price":"￥299",
+                        "sales":14598
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261056513801.jpg",
+                        "name":"美丽心情",
+                        "price":"￥239",
+                        "sales":7548
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261138142574.jpg",
+                        "name":"你的笑靥",
+                        "price":"￥269",
+                        "sales":7895
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200713/202007131442249878.jpg",
+                        "name":"相依相伴",
+                        "price":"￥278",
+                        "sales":6985
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200708/202007081525027185.jpg",
+                        "name":"一生有你",
+                        "price":"￥389",
+                        "sales":8454
+                    }
+                ]
+			},
+			{
+				"class": "鲜花礼盒",
+				"leftImg": "https://upyun.dinghuale.com/uploads/20201019/202010191328128403.jpg",
+                "rightItem":[
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200826/202008261130205022.jpg",
+                        "name":"幸福守候",
+                        "price":"￥239",
+                        "sales":15632
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200630/202006301719514798.jpg",
+                        "name":"绵绵情谊",
+                        "price":"￥239",
+                        "sales":11897
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200707/202007071003531298.jpg",
+                        "name":"挚爱一生",
+                        "price":"￥189",
+                        "sales":9856
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200630/202006301732128936.jpg",
+                        "name":"亲密无间",
+                        "price":"￥239",
+                        "sales":12248
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200630/202006301737379714.jpg",
+                        "name":"全心全意",
+                        "price":"￥189",
+                        "sales":12354
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200818/202008181659388005.jpg",
+                        "name":"一生所爱",
+                        "price":"￥339",
+                        "sales":11366
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200713/202007131620544163.jpg",
+                        "name":"爱情时光",
+                        "price":"￥359",
+                        "sales":8957
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20210426/202104261257415133.jpg",
+                        "name":"缘分天空",
+                        "price":"￥339",
+                        "sales":13960
+                    }
+                ]
+			},
+			{
+				"class": "开业花篮",
+				"leftImg": "https://cs.dinghuale.com/uploads/20200624/202006241326302151.jpg",
+                "rightItem":[
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291536431010.jpg",
+                        "name":"大吉大利（一对）",
+                        "price":"￥258",
+                        "sales":10245
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291732318324.jpg",
+                        "name":"喜气迎门（一对）",
+                        "price":"￥328",
+                        "sales":11897
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291712209904.jpg",
+                        "name":"生意兴隆（一对）",
+                        "price":"￥399",
+                        "sales":11265
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291551446068.jpg",
+                        "name":"好运连连（一对）",
+                        "price":"￥398",
+                        "sales":10711
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291728114941.jpg",
+                        "name":"喜气洋洋（一对）",
+                        "price":"￥379",
+                        "sales":7698
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291709582518.jpg",
+                        "name":"张灯结彩（一对）",
+                        "price":"￥498",
+                        "sales":8736
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200628/202006281521087286.jpg",
+                        "name":"开业大卖",
+                        "price":"￥359",
+                        "sales":6358
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200629/202006291723422114.jpg",
+                        "name":"万事如意（一对）",
+                        "price":"￥569",
+                        "sales":5512
+                    }
+                ]
+			},
+			{
+				"class": "绿植",
+				"leftImg": "https://cs.dinghuale.com/uploads/20200624/202006240927558865.jpg",
+                "rightItem":[
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231630429791.jpg",
+                        "name":"辫子发财树盆栽",
+                        "price":"￥539",
+                        "sales":2549
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231727316935.jpg",
+                        "name":"单柱发财树盆栽",
+                        "price":"￥489",
+                        "sales":4563
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231216548078.jpg",
+                        "name":"绿宝盆栽",
+                        "price":"￥396",
+                        "sales":845
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231759215799.jpg",
+                        "name":"落地大富贵竹",
+                        "price":"￥438",
+                        "sales":2312
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231241078043.jpg",
+                        "name":"天堂鸟盆栽",
+                        "price":"￥659",
+                        "sales":1125
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231723354886.jpg",
+                        "name":"三株鸿运当头盆栽",
+                        "price":"￥569",
+                        "sales":2376
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200623/202006231652049943.jpg",
+                        "name":"虎皮兰盆栽",
+                        "price":"￥389",
+                        "sales":2335
+                    },
+                    {
+                        "img":"https://upyun.dinghuale.com/uploads/20200624/202006240941393839.jpg",
+                        "name":"心叶藤盆栽",
+                        "price":"￥429",
+                        "sales":1211
+                    }
+                ]
+			}
+		]
+	}
+]

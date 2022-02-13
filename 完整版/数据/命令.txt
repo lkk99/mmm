@@ -1,0 +1,11 @@
+mongoimport -d flower -c appraises ./数据/appraise.txt 
+
+mongoimport -d flower -c categories ./数据/category.txt
+
+mongoimport -d flower -c details ./数据/details.txt
+
+mongoimport -d flower -c flowers ./数据/flowerslist.txt
+
+mongoimport -d flower -c products ./数据/productsdetails.txt
+
+mongoimport -d wuye -c news ./news.txt 
